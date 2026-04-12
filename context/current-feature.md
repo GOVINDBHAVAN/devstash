@@ -1,18 +1,18 @@
 # Current Feature
 
-<!-- Feature name and short description -->
+None
 
 ## Status
 
-<!-- Not Started | In Progress | Completed -->
+—
 
 ## Goals
 
-<!-- Goals and requirements -->
+—
 
 ## Notes
 
-<!-- Any extra notes -->
+—
 
 ## History
 
@@ -29,4 +29,13 @@
 - Created `/dashboard` route with layout at `src/app/dashboard/layout.tsx`
 - Top bar: DevStash logo, search input with ⌘K hint, New Collection + New Item buttons
 - Sidebar placeholder (h2 "Sidebar") and main area placeholder (h2 "Main")
+- Build passes
+
+### 2026-04-12 — Dashboard UI Phase 2
+- Collapsible sidebar with drawer icon to open/close
+- Item type links to `/items/TYPE`
+- Favorite collections section
+- Most recent collections section
+- User avatar area at the bottom of the sidebar
+- Mobile drawer behavior
 - Build passes
