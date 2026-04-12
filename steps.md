@@ -201,5 +201,4 @@ Create a new file at src/lib/mock-data.ts and create a simple data structure for
 
 Then push to git:
 > Push to main
-> 
 
