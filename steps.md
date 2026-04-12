@@ -126,5 +126,80 @@ We'll create `/feature` command with arguments for this workflow.
 
 Created at
 > https://github.com/GOVINDBHAVAN/devstash.git
->
+
+Check git status using prompt
+> What is the status of git
+> yes this is my github repository path: https://github.com/GOVINDBHAVAN/devstash.git, setup this project but do not commit to github now, just prepare the github locally
+> commit with the message "Initial commit with nextjs and tailwind setup"
+> add the remote repo
+> push to origin
+
+## Update feature after initial setup and git hub commit
+
+> add the initial setup of next.js to the history in the @context/current-feature.md  
 > 
+
+
+
+
+## Prepare UI design sample page using v0.app
+
+For UI presentation (irrespective) of code, prepare UI design (like figma) use v0.app for UI and paste that screenshot in Claude prompt.
+
+### Develop Dashboard
+
+Always first start developing the main feature of the application like Dashboard.
+
+#### Preparing UI mock design using v0.app
+
+Take the content from file and paste in v0.app and add project overview content at the end:
+
+```md
+I want to prototype a dashboard UI for my SaaS. I am going to give you the entire project overview. From that, I want you to create ONLY a mockup of the dashboard. It should not function other than visual elements. This is only to create the basic UI.
+
+I will paste the project overview below to use as a reference for the design. Again, you are NOT creating the project as a whole but only the dashboard UI. Things like the collapsable sidebar, the main grid of collections and items, the item drawer, etc. Add dummy data for collections and items. Also, make it responsive.
+
+Project Overview
+
+<!--PASTE PROJECT-OVERVIEW.md-->
+```
+
+##### Fine tunning v0.app mock design using prompts on v0.app
+ 
+ Review the design and fine-tune like below prompt:
+ 
+ > the color codes for the items are import. we need the item cards to have a border with item color. the collection cards should have file border color of whatever item type there is msost in that collection.
+
+Take screenshot of the design and paste in claude code. We'll use the course given images available in: D:\Training\ChatGPT\Claude\Complete this Coding With AI - Planning To Production\5 - Start Building DevStash\lesson-resources\screenshots
+
+Put those screenshots in the \context\screenshots\ folder
+
+Important to update `project-overview.md` file to reference those screenshots:
+
+- Add new section after the ### Design References or ## 🎨 UI / UX as ### Screenshots like:
+
+```text
+### Screenshots
+
+Refer to the screenshots below as a base for the dashboard UI. It does not have to be exact. Use it as a reference:
+
+- @context/screenshots/dashboard-ui-main.png
+- @context/screenshots/dashboard-ui-drawer.
+```
+
+#### Prepare mock data for the dashboard
+
+## Mock Data Prompt
+
+Paste this below prompt in the Claude:
+
+```text
+We need a single source of truth for mock data to use for the dashboard UI until we implement a database. Read @context/project-overview.md and look at @context/screenshots/dashboard-ui-main.png to see the data structure.
+
+Create a new file at src/lib/mock-data.ts and create a simple data structure for the dashboard UI. It should include items, collections, item types and a user for the current logged in user. Do not make this too complex. It is only for displaying data in the dashboard like the screenshot. Do not create helper methods, just a simple data file to import.
+```
+
+Then push to git:
+> Push to main
+> 
+

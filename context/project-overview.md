@@ -285,6 +285,13 @@ UI Update
 - Syntax highlighting for all code snippets
 - Inspired by [Notion](https://notion.so), [Linear](https://linear.app), and [Raycast](https://raycast.com)
 
+### Screenshots
+
+Refer to the screenshots below as a base for the dashboard UI. It does not have to be exact. Use it as a reference:
+
+- @context/screenshots/dashboard-ui-main.png
+- @context/screenshots/dashboard-ui-drawer.png
+
 ### Layout
 
 | Component | Description |
