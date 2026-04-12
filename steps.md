@@ -216,4 +216,38 @@ Then push to git:
 > Update the @context\current-feature.md to add the feature from @context\features\dashboard-phase-1-spec.md. Set the status to in progress.
 
 > Open a new branch and implement the feature in @context\current-feature.md
+
+After review the UI update status to completed
+
+> Update the @context\current-feature.md to be completed.
+
+> Also clear the info and add the feature to the history
+
+> Commit and merge to main then delete the feature branch.
+
+> Go ahead and push
+
+> /clear
+
+```
+
+##### Phase 2 development
+
+```text
+> Update the @context\current-feature.md to add the feature from @context\features\dashboard-phase-2-spec.md. Set the status to in progress.
+
+> Implement the feature.
+
+Here it should have understanding to auto create the new feature branch.
+
+> Update the @context\current-feature.md to be completed.
+
+> Also clear the info and add the feature to the history
+
+
+> Commit and merge to main then delete the feature branch.
+
+> Go ahead and push
+
+
 ```
