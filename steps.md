@@ -189,7 +189,7 @@ Refer to the screenshots below as a base for the dashboard UI. It does not have 
 
 #### Prepare mock data for the dashboard
 
-## Mock Data Prompt
+##### Mock Data Prompt
 
 Paste this below prompt in the Claude:
 
@@ -202,3 +202,18 @@ Create a new file at src/lib/mock-data.ts and create a simple data structure for
 Then push to git:
 > Push to main
 
+
+#### Now developing the actual dashboard
+
+- Create a new 'features' folder inside 'context'.
+- Copy all the dashboard spec files from course to `context\features` src folder: "D:\Training\ChatGPT\Claude\Complete this Coding With AI - Planning To Production\1 - Introduction & What Is AI\coding-with-ai-course-resources\context\features\"
+- dashboard-phase-1-spec.md
+- dashboard-phase-2-spec.md
+- dashboard-phase-3-spec.md
+
+##### Phase 1 development
+```text
+> Update the @context\current-feature.md to add the feature from @context\features\dashboard-phase-1-spec.md. Set the status to in progress.
+
+> Open a new branch and implement the feature in @context\current-feature.md
+```
